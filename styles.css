@@ -1,0 +1,125 @@
+* {
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+    transition:all 1s ease-in-out;
+  }
+  
+  body{
+    background-color:rgb(250, 250, 250);
+  }
+  
+  .head-lines{
+    text-align:center;
+    margin-top:2em;
+    margin-bottom:2em;
+    width:100%;
+  }
+  
+  .head-line{
+    color:rgb(0, 0, 0, .6);
+    font-weight:300;
+    font-size:25px;
+    
+    margin:0;
+  }
+  
+  .head-lines h3{
+    font-size:25px;
+    margin:0;
+    line-height:1.5;
+    font-weight:500;
+  }
+  
+  .header{
+    color:rgb(0, 0, 0, .4);
+    line-height:1.5;
+    text-align:center;
+    margin:auto;
+    width:60%;
+    font-size:small;
+    margin-top:10px;
+  }
+  
+  .cards{
+    width:100%;
+    display:grid;
+    grid-template-col1fr mns:1fr 1fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas:
+      ". two ."
+      "one two four"
+      "one three four"
+      ". three .";    
+  }
+  
+  .card{
+    padding:2em;
+    border-radius:7px;
+    margin:10px;
+    height:auto;
+    width:400px;
+    background-color:#fff;
+    overflow:hidden;
+    box-shadow:5px 5px 5px 5px rgb(224, 230, 237);
+    place-items:center;
+  }
+  
+  .one{
+    border-top:5px rgb(96, 190, 190) solid;
+    grid-area:one;
+  }
+  
+  .two{
+    border-top:5px rgb(220, 86, 86) solid;
+    grid-area:two;
+    
+  }
+  
+  .three{
+    border-top:5px rgb(251, 177, 80) solid;
+    grid-area:three;
+  }
+  
+  .four{
+    border-top:5px rgb(113, 162, 220) solid;
+    grid-area:four;
+  }
+  
+  .card h3{
+    
+  }
+  
+  .card p{
+    color:rgb(0, 0, 0, .4);
+    width:70%;
+  }
+  
+  .card img{
+    width:60px;
+    float:right;
+  }
+  
+  @media (max-width: 575px){
+    .cards{
+      display:block;
+      padding:1em;
+    }
+    .card{
+      width:98%;
+    margin:20px auto;
+      
+    }
+  }
+  
+  @media (max-width:
+   800px){
+    .cards{
+      display:block;
+      padding:1em;
+    }
+    .card{
+      width:98%;
+    margin:20px auto;
+      
+    }
+  }
